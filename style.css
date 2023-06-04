@@ -1,0 +1,202 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  scroll-behavior: smooth;
+}
+.container{
+  width: 100%;
+  height: 99vh;
+
+  color: #75D1FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/* flex-direction: column; */
+/* background-image: url(./image/Dark\ Dystopia.jpg); */
+}
+
+.space-adjust{
+  /* padding: 5% 5%; */
+  height: 100%;
+}
+
+.owner-Name{
+  font-family: 'Tangerine', serif;
+  cursor: pointer;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.owner-title,.owner-Role{
+  color: #FFE347;
+}
+
+.owner-Role{
+  /* margin: 2rem 0 0 40% ; */
+  display: block;
+  text-align: right;
+  transition: 2s;
+  overflow: hidden;
+  /* direction: rtl; */
+  margin-left: 50%;
+  padding-right: 1rem;
+
+}
+
+.owner-Name::after{
+  content: '';
+  border-bottom: 2px solid #FFE347 ;
+  position: relative;
+  top: 10px;
+  display: block;
+  animation: increaseLine 2s;
+}
+.inline-block{
+display: inline-block;
+}
+
+.j1,.j2,.j3{
+position: relative;
+
+}
+.j1{
+animation: right-to-left 2s;
+}
+.j2{
+  animation: right-to-left 3s;
+  }
+  .j3{
+    animation: right-to-left 4s;
+    }
+.title-right-left{
+  margin-top: 2rem;
+ 
+}
+.image-container{
+  width: 80%;
+  height: 80%
+}
+.image-container-details{
+  width: 80%;
+  height: 100%;
+  background-image: url(./image/myimage4.jpg);
+  background-position: center;
+  background-size: 70%;
+  background-repeat-y: no-repeat;
+  background-repeat-x:no-repeat ;
+}
+
+@keyframes right-left{
+  0%{
+    visibility: hidden;
+    padding-left: 100%;
+  }
+  30%{
+    visibility: visible;
+    padding-left: 50%;
+  }
+  100%{
+padding-left: 0%;
+  }
+}
+
+@keyframes increaseLine {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@keyframes right-to-left{
+0%{
+  left: 80%;
+}
+100%{
+  left: 0%;
+}
+}
+
+.header-details .center-menu{
+  color: #75D1FF;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.center-menu .hoverchange{
+  padding: 12px;
+  position: absolute;
+  border: 2px solid #000000;
+  width: 65px;
+  text-align: center;
+}
+
+.center-menu .hoverchange:hover {
+
+  animation: bordercreate 0.4s ease-in;
+  border:2px solid #FFE347;
+  border-radius: 10%;
+}
+
+
+@keyframes bordercreate{
+  0%{
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  33%{
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+  }
+  66%{
+    border-left: 2px solid #000000;
+  }
+  99%{
+
+    }
+  
+}
+.contact-details{
+  height: 100vh;
+}
+
+.socailMedia div{
+  color: #75D1FF;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.address-content div{
+  text-align: left;
+}
+
+.address-content{
+  margin: 4rem;
+  display: flex;
+  position: relative;
+}
+
+.addressBody::before{
+  content: '';
+  border-left: 1px solid #FFE347;
+  animation: borderRight 2s;
+  position: absolute;
+  height: 100%;
+  margin-left: -15px;
+animation: borderRight 2s;
+}
+
+@keyframes borderRight{
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: 100%;
+  }
+}
