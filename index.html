@@ -3,122 +3,296 @@
 
 <head>
   <title>Portfolio</title>
-  <link rel="styleSheet" href="./style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pirata One">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1">
+
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
   <div class="space-adjust">
 
-    <div class="header-details" style="display: flex;margin: 16px;">
-      <div style="flex: 1 1 30%;">
-
+    <div class="header-details margin-16px display-flex">
+      <div class="flex30" style="flex: 1 1 20%;">
+        <div class="portfolio padding-24px">
+          Portfolio
+        </div>
       </div>
-      <div class="center-menu" style="flex: 1 1 40%;justify-content: space-between; cursor: pointer;">
-        <span style="position: relative;"><span class="hoverchange"><a href="#contact"
-              style="text-decoration: none;color: inherit;">Contact</a></span></span>
-        <span style="position: relative;"><span class="hoverchange">Work</span></span>
-        <span style="position: relative;"><span class="hoverchange">Skill</span></span>
+      <div class="center-menu "style="flex: 1 1 60%;">
+        <span class="position-relative"><span class=""><a href="#contact"
+              class="social-text-standard hoverchange">Contact</a></span></span>
+        <span class="position-relative"><span class=""><a href="#experience"
+              class="social-text-standard hoverchange">Experience</a></span></span>
+        <span class="position-relative"><span class=""><a href="#skill"
+              class="social-text-standard hoverchange">Skill</a></span></span>
       </div>
-      <div style="flex: 1 1 30%;">
+      <div class="flex30" style="flex: 1 1 20%;">
 
       </div>
     </div>
-
-    <div class="container">
-      <div style="display:flex;flex:1 1 70%;">
-        <div style="flex: 1 1 10%;"></div>
-        <div style="flex: 1 1 40%;">
-
-          <div class="owner-title">The Boss</div>
-          <div class="owner-Name" id="ownerName">
-            Boobalan Veerappan
-          </div>
-          <div class="owner-Role" id="role">
-            <div class="title-right-left">
-              <span class="inline-block j1"> Java</span> <span class="inline-block j2"> Full stack</span> <span
-                class="inline-block j3"> Developer .</span>
+    <div class="container" style="flex-wrap: wrap;">
+      <div class="display-flex flex-70 resposive-name">
+        <div class="flex5"></div>
+        <div class="flex-40">
+          <div style="padding: 0 28px;">
+            <!-- <div class="owner-title">The Boss</div> -->
+            <div class="owner-Name" id="ownerName">
+              Boobalan Veerappan
+            </div>
+            <div class="owner-Role" id="role">
+              <div class="title-right-left">
+                <span class="inline-block j1"> Java</span> <span class="inline-block j2"> Full stack</span> <span
+                  class="inline-block j3"> Developer .</span>
+              </div>
             </div>
           </div>
-
+          
+          <div style="margin-top: 5rem;">
+            <div class="acco-width" ><div class="objective" style="display: inline-block;">Objective &nbsp;</div>
+            <!-- <div class="sideview" style="display: inline-block;"></div> -->
+            <span style="float: right;" class="arrowstyle" id="arrowstyle" onclick="accordionToogle()" ></span></div>
+          <div id="accodion-default" class="accodion-default">
+            <div style="padding: 16px;font-size: 12px;"  >
+              3+ years of Experience in Analyzing, Designing, Developing and Integrating
+              Front-End & Back-End based applications.
+              Experience in developing application using Java ,Angular,Spring Boot,Junit and Restful Web Services.
+              Experience in developing web application using HTML, CSS, JavaScript, Angular.
         </div>
-        <div style="flex: 1 1 10%;"></div>
       </div>
-      <div class="image-container" style="flex: 1 1 30%;">
+
+      </div>
+        </div>
+        <div class="flex5"></div>
+      </div>
+
+      <div class="image-container flex30 resposive-image">
         <div class="image-container-details">
 
         </div>
       </div>
+      <div style="flex: 1 1 5%;"></div>
+      <div class="flex-70">
+
+      </div>
+      <div style="flex: 1 1 25%;"></div>
     </div>
-    <div class="contact-details" id="contact" style="margin: 16px;">
-      <div style="padding: 16px 0; font-weight: bold; font-size: 2rem;color: #fff;">
+
+    <div class="skill-details margin-16px" id="skill">
+      <div class="skill-tag-header">
+        Skill
+      </div>
+      <div class="skill-badge-body">
+        <div class="skill-badge">
+          <span>UI</span>
+          <span>Javascript</span>
+          <span>CSS</span>
+          <span>Bootstrap</span>
+          <span>Angular</span>
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>SQL</span>
+          <span>Hibernate</span>
+          <span>GCP</span>
+          <span>Terraform</span>
+          <span>Junit Test</span>
+        </div>
+      </div>
+    </div>
+    <div id="experience" class="margin-16px">
+      <div class="text-contact-style">
+        Experience
+      </div>
+      <div class="padding-16px">
+<div class="display-flex">
+  <div style="color:#FFE347;flex: 1 1 15%;padding: 12px;display: flex;justify-content: center;">
+<div>
+    <div style="height: 122px;">
+    <span class="circle-arrow" style="align-items: center;">
+      <span class="inner-circle"></span>
+    </span>
+    <div class="classLine">
+      <div class="border-right"></div>
+    </div>
+  </div>
+  <div style="height: 122px;">
+    <span class="circle-arrow" style="align-items: center;">
+      <span class="inner-circle"></span>
+    </span>
+    <div class="classLine">
+      <div class="border-right"></div>
+    </div>
+  </div>
+  <div class="arrow"></div>
+</div>
+
+</div>
+  <div style="flex: 1 1 85%;">
+        <div class="display-flex experience-tag">
+         
+          <div style="flex:1 1 25%">
+            <img src="./image//heraizen.png" width="48px" height="28px">
+          </div>
+          <div style="flex:1 1 75%;height: 110px;" class="exper-details">
+            <div class="experience-title">Full Stack Developer</div>
+            <div class="experience-company">Heraizen - Full-time</div>
+            <div class="experience-year">Dec 2019 - Nov 2022 .3 yrs</div>
+            <div class="experience-location">Bangalore</div>
+          </div>
+        
+        </div>
+        <div class="display-flex experience-tag">
+          
+          <div style="flex:1 1 25%">
+            <img src="./image/htc global service.png" width="48px" height="48px">
+          </div>
+          <div style="flex:1 1 75%;height: 110px;" class="exper-details">
+            <div class="experience-title">Full Stack Developer</div>
+            <div class="experience-company">HTC Global Services - Full-time</div>
+            <div class="experience-year">Nov 2022 - Present · 10 mos</div>
+            <div class="experience-location">Chennai</div>
+          </div>
+        
+        </div>
+        
+      </div>
+      </div>
+      </div>
+    </div>
+    <div id="work" class="margin-16px">
+      <div class="text-contact-style">
+        Work
+      </div>
+      <div class="padding-16px">
+
+        <div class="display-flex">
+          <div class="flex-33-box">
+            <div class="work-box-1 image-box1"
+              style="display:flex;align-items: center ;justify-content: center;border: 2px solid #fff;height: 12rem;border-radius: 8px;cursor: pointer;color: red;position: relative;">
+
+              <div style="visibility: hidden;position: relative;top: 60px">
+                <button><a href="https://boobalan-veerappan.github.io/Tic_Tac/" target="_blank"
+                    class="social-text-standard">Click</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex-33-box">
+            <div class="work-box-1 image-box2"
+              style="display:flex;align-items: center ;justify-content: center;border: 2px solid #fff;height: 12rem;border-radius: 8px;cursor: pointer;color: red;position: relative;">
+
+              <div style="visibility: hidden;position: relative;top: 60px">
+                <button><a href="https://boobalan-veerappan.github.io/Beach/" target="_blank"
+                    class="social-text-standard">Click</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex-33-box">
+            <div class="work-box-1 image-box3"
+              style="display:flex;align-items: center ;justify-content: center;border: 2px solid #fff;height: 12rem;border-radius: 8px;cursor: pointer;color: red;position: relative;">
+
+              <div style="visibility: hidden;position: relative;top: 60px">
+                <button><a href="https://boobalan-veerappan.github.io/ID-Card/" target="_blank"
+                    class="social-text-standard">Click</a></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="display-flex">
+          <div class="flex-50-box" style="float: right;">
+            <div class="work-box-1 floatright width-75 image-box4"
+              style="display:flex;align-items: center ;justify-content: center;border: 2px solid #fff;height: 12rem;border-radius: 8px;cursor: pointer;color: red;position: relative;">
+
+              <div style="visibility: hidden;position: relative;top: 60px">
+                <button><a href="https://boobalan-veerappan.github.io/homework.github.io/" target="_blank"
+                    class="social-text-standard">Click</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="flex-50-box" style="float: left;">
+            <div class="work-box-1 width-75 image-box5"
+              style="display:flex;align-items: center ;justify-content: center;border: 2px solid #fff;height: 12rem;border-radius: 8px;cursor: pointer;color: red;position: relative;">
+
+              <div style="visibility: hidden;position: relative;top: 60px">
+                <button><a href="https://boobalan-veerappan.github.io/frontend-Menter/" target="_blank"
+                    class="social-text-standard">Click</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="contact-details margin-16px" id="contact">
+      <div class="text-contact-style">
         Contact
       </div>
-      <div style="display:flex">
-        <div style="flex: 1 1 35%;padding: 16px;">
-          <div style="font-size: 4em;-webkit-text-stroke: 1px white;text-align: right;">
+      <div class="display-flex">
+        <div class="let-talk-more">
+          <div class="let-take-more-style">
             <div>Let's</div>
             <div>Talk</div>
             <div> More</div>
           </div>
         </div>
-        <div style="flex: 1 1 65%;padding: 16px;" class="socailMedia">
-          <div style="display: flex;flex-wrap: wrap;">
-           
-            <div style="flex:1 1 33%;margin: 24px 0;">
-              <a href="https://www.linkedin.com/in/boobalan-v-94119320b/" target="_blank" style="text-decoration: none;color: inherit;">
+        <div class="socailMedia social-icon-badge">
+          <div class="flex-wrap">
+
+            <div class="social-badge">
+              <a href="https://www.linkedin.com/in/boobalan-v-94119320b/" target="_blank" class="social-text-standard">
                 <img src="./image/icons8-facebook.svg">
                 <div>facebook</div>
               </a>
             </div>
-            <div style="flex:1 1 33%;margin: 24px 0;">
-              <a href="https://github.com/Boobalan-Veerappan" target="_blank" style="text-decoration: none;color: inherit;">
-                <img src="./image/icons8-github.svg" style="background: #ffff;border-radius: 50%;">
+            <div class="social-badge">
+              <a href="https://github.com/Boobalan-Veerappan" target="_blank" class="social-text-standard">
+                <img src="./image/icons8-github.svg" class="github-bg">
                 <div>GitHub</div>
               </a>
             </div>
-            <div style="flex: 1 1 33%;margin: 24px 0;">
-              <a href="https://twitter.com/boobalanv2016" target="_blank"  style="text-decoration: none;color: inherit;">
+            <div class="social-badge">
+              <a href="https://twitter.com/boobalanv2016" target="_blank" class="social-text-standard">
                 <img src="./image/icons8-twitter.svg">
                 <div>Twitter</div>
               </a>
             </div>
 
-            <div style="flex:1 1 33%;margin: 24px 0;">
-              <a  style="text-decoration: none;color: inherit;">
+            <div class="social-badge">
+              <a class="social-text-standard">
                 <img src="./image/icons8-google.svg">
-                <div>Google</div>
+                <div>Google</div> relative
               </a>
             </div>
-            <div style="flex:1 1 33%;margin: 24px 0;">
-              <a href="https://www.instagram.com/boobalan_veerappan/" target="_blank"  style="text-decoration: none;color: inherit;">
+            <div class="social-badge">
+              <a class="social-text-standard" href="https://www.instagram.com/boobalan_veerappan/" target="_blank">
                 <img src="./image/icons8-instagram.svg">
                 <div>Instagram</div>
               </a>
             </div>
-            <div style="flex:1 1 33%;margin: 24px 0;">
-              <a href="https://www.linkedin.com/in/boobalan-v-94119320b/" target="_blank"  style="text-decoration: none;color: inherit;">
+            <div class="social-badge">
+              <a class="social-text-standard" href="https://www.linkedin.com/in/boobalan-v-94119320b/" target="_blank">
                 <img src="./image/icons8-linkedin.svg">
                 <div>LinkedIn</div>
               </a>
             </div>
 
           </div>
-          <div class="address-content" style="text-align: left;">
-            <div style="flex: 1 1 50%;text-align: right;left: -2.5rem;position: relative;">Address</div>
-            <div style="flex: 1 1 50%;">
-<div class="addressBody">
-              <div>4/215 Pavadi Street</div>
-              <div>M.Kandampalayam</div>
-              <div>N.Kandampalayam (Post)</div>
-              <div>Paramathi velur (T.K)</div>
-              <div>Namakkal (D.T)</div>
-              <div>PinCode : 637203 </div>
-              <div><span>Phone : </span> 9578615087</div>
-              <div><span>Phone : </span> 7200212302</div>
-              <div><span>Gmail : </span> boobalanv2016@gmail.com</div>
-            </div>
+          <div class="address-content text-left">
+            <div class="address-contact">Address</div>
+            <div class="flex-50">
+              <div class="addressBody">
+                <div>4/215 Pavadi Street</div>
+                <div>M.Kandampalayam</div>
+                <div>N.Kandampalayam (Post)</div>
+                <div>Paramathi velur (T.K)</div>
+                <div>Namakkal (D.T)</div>
+                <div>PinCode : 637203 </div>
+                <div><span>Phone : </span> 9578615087</div>
+                <div><span>Phone : </span> 7200212302</div>
+                <div><span>Gmail : </span> boobalanv2016@gmail.com</div>
+              </div>
             </div>
           </div>
 
@@ -128,6 +302,9 @@
         </div>
       </div>
 
+    </div>
+    <div style="padding: 16px;text-align: center;color: #fff;">
+      <div>&copy; boobalanv2016@gmail.com</div>
     </div>
   </div>
   <script src="./script.js"></script>
